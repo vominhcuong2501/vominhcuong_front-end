@@ -34,3 +34,10 @@ body {
 		text-wrap: balance;
 	}
 }
+
+
+.text-gradient-red {
+	background: linear-gradient(225deg, #ff6a00 0%, #ee0979 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
