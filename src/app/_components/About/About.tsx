@@ -35,7 +35,7 @@ const About = () => {
 						duration: 1,
 					}}
 					className="relative mx-auto shrink-0 object-cover lg:w-[600px] rounded-[16px]"
-					src="./RIC_2746.jpg"
+					src="./cuong.jpeg"
 					alt={"About me"}
 				/>
 

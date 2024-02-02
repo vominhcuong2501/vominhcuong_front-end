@@ -1,60 +1,184 @@
 "use client";
 
 import { motion } from "framer-motion";
-// import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
-// import { Navigation, EffectFade, Pagination } from "swiper/modules";
-// import Image from "next/image";
+import { Navigation, EffectFade, Pagination } from "swiper/modules";
+import Image from "next/image";
 
 const Project = () => {
-	// const data = [
-	// 	{
-	// 		imgProject: "/project-bincg.png",
-	// 		nameProject: "BIN Corporation Group",
-	// 		listIcon: [
-	// 			{
-	// 				name: "NextJs",
-	// 				icon: "/icon-nextjs.jpg",
-	// 			},
-	// 			{
-	// 				name: "HTML",
-	// 				icon: "/icon_html.webp",
-	// 			},
-	// 			{
-	// 				name: "CSS",
-	// 				icon: "/icon_css.webp",
-	// 			},
-	// 			{
-	// 				name: "Javascript",
-	// 				icon: "/icon_javascript.webp",
-	// 			},
-	// 			{
-	// 				name: "PHP",
-	// 				icon: "/icon_php.webp",
-	// 			},
-	// 			{
-	// 				name: "Tailwindcss",
-	// 				icon: "/icon_typescript.webp",
-	// 			},
-	// 			{
-	// 				name: "Typescript",
-	// 				icon: "/icon_typescript.webp",
-	// 			},
-	// 			{
-	// 				name: "Tanstack Query",
-	// 				icon: "/icon-tanstack-query.png",
-	// 			},
-	// 			{
-	// 				name: "MySQL",
-	// 				icon: "/icon-tanstack-query.png",
-	// 			},
-	// 		],
-	// 		content: "",
-	// 	},
-	// ];
+	const data = [
+		{
+			imgProject: "/project-bincg.jpg",
+			nameProject: "BIN Corporation Group",
+			listIcon: [
+				{
+					name: "NextJs",
+					icon: "/icon-nextjs.jpg",
+				},
+				{
+					name: "HTML",
+					icon: "/icon_html.webp",
+				},
+				{
+					name: "CSS",
+					icon: "/icon_css.webp",
+				},
+				{
+					name: "Javascript",
+					icon: "/icon_javascript.webp",
+				},
+				{
+					name: "Tailwindss",
+					icon: "/icon_tailwindcss.webp",
+				},
+				{
+					name: "Typescript",
+					icon: "/icon_typescript.webp",
+				},
+				{
+					name: "Tanstack Query",
+					icon: "/icon-tanstack-query.png",
+				},
+			],
+			content: `<ul class="pl-5 list-disc">
+			<li class="text-14 lg:text-16">
+				Website:
+				<a
+					href="https://sandbox.bincorporation.com/"
+					target="_blank"
+					title="https://sandbox.bincorporation.com/"
+					class="text-[#007aff]"
+				>
+					https://sandbox.bincorporation.com/
+				</a>
+			</li>
+			<li class="text-14 lg:text-16">
+				Project description: Website introduces BIN CORPORATION GROUP, the
+				fields in which the group operates and recruitment information for the
+				group
+			</li>
+			<li class="text-14 lg:text-16">Number of participants: 5</li>
+			<li class="text-14 lg:text-16">
+				Technologies utilized: Nextjs - Typescript (frontend), Laravel - PHP
+				(API & back office).
+			</li>
+			<li class="text-14 lg:text-16">
+				Tasks in the project: Build a website interface by design from figma
+				into code.
+			</li>
+		</ul>`,
+		},
+		{
+			imgProject: "/project_travelner.jpg",
+			nameProject: "Travelner Insurance",
+			listIcon: [
+				{
+					name: "NextJs",
+					icon: "/icon-nextjs.jpg",
+				},
+				{
+					name: "HTML",
+					icon: "/icon_html.webp",
+				},
+				{
+					name: "CSS",
+					icon: "/icon_css.webp",
+				},
+				{
+					name: "Javascript",
+					icon: "/icon_javascript.webp",
+				},
+
+				{
+					name: "Tailwindcss",
+					icon: "/icon_tailwindcss.webp",
+				},
+				{
+					name: "Typescript",
+					icon: "/icon_typescript.webp",
+				},
+				{
+					name: "Tanstack Query",
+					icon: "/icon-tanstack-query.png",
+				},
+			],
+			content: `<ul class="pl-5 list-disc">
+			<li class="text-14 lg:text-16">
+				Website:
+				<a
+					href="https://www.travelnerinsurance.com"
+					target="_blank"
+					title="https://www.travelnerinsurance.com"
+					class="text-[#007aff]"
+				>
+					https://www.travelnerinsurance.com
+				</a>
+			</li>
+			<li class="text-14 lg:text-16">
+			Project description: Travelner Insurance is a global booking platform for travel
+			insurance.
+			</li>
+			<li class="text-14 lg:text-16">Number of participants: 10</li>
+			<li class="text-14 lg:text-16">
+				Technologies utilized: Nextjs - Typescript (frontend), Laravel - PHP
+				(API & back office).
+			</li>
+			<li class="text-14 lg:text-16">
+			Tasks in the project: implement the user interface and user functionalities based on
+			the provided design and analysis documentation.
+			</li>
+		</ul>`,
+		},
+		{
+			imgProject: "/project-meliwa.jpg",
+			nameProject: "Meliwa",
+			listIcon: [
+				{
+					name: "Wordpress",
+					icon: "/icon-wp.png",
+				},
+				{
+					name: "HTML",
+					icon: "/icon_html.webp",
+				},
+				{
+					name: "CSS",
+					icon: "/icon_css.webp",
+				},
+				{
+					name: "Javascript",
+					icon: "/icon_javascript.webp",
+				},
+			],
+			content: `<ul class="pl-5 list-disc">
+			<li class="text-14 lg:text-16">
+				Website:
+				<a
+					href="https://www.meliwa.vn/"
+					target="_blank"
+					title="https://www.meliwa.vn/"
+					class="text-[#007aff]"
+				>
+					https://www.meliwa.vn/
+				</a>
+			</li>
+			<li class="text-14 lg:text-16">
+			Project description: This is an e-commerce website. Main product is air purifier.
+			</li>
+			<li class="text-14 lg:text-16">Number of participants: 4</li>
+			<li class="text-14 lg:text-16">
+			Technologies utilized: Wordpress (Open-source), PHP
+			</li>
+			<li class="text-14 lg:text-16">
+			Tasks in the project: Build a website interface by design from figma into code.
+			</li>
+		</ul>`,
+		},
+	];
 
 	return (
 		<div
@@ -64,27 +188,7 @@ const Project = () => {
 			<h2 className="absolute top-20 z-10 translate-x-3 text-16 uppercase tracking-[20px] md:text-32 font-bold">
 				Project
 			</h2>
-			<ul>
-				<li className="text-14 lg:text-16">
-					Website:
-					<a
-						href="https://sandbox.bincorporation.com/"
-						target="_blank"
-						title="https://sandbox.bincorporation.com/"
-					>
-						https://sandbox.bincorporation.com/
-					</a>
-				</li>
-				<li className="text-14 lg:text-16">
-					Project description: Website introduces BIN CORPORATION GROUP, the
-					fields in which the group operates and recruitment information for the
-					group
-				</li>
-				<li className="text-14 lg:text-16">Number of participants: 5</li>
-				<li className="text-14 lg:text-16">Technologies utilized: Nextjs - Typescript (frontend), Laravel - PHP (API & back
-office).</li>
-				<li className="text-14 lg:text-16"></li>
-			</ul>
+
 			<motion.div
 				initial={{
 					opacity: 0,
@@ -98,15 +202,14 @@ office).</li>
 					duration: 1.2,
 				}}
 			>
-				{/* <Swiper
-					modules={[Navigation, EffectFade, Pagination]}
-					className="mySwiper max-w-[343px] lg:max-w-[900px] !pb-10"
+				<Swiper
+					modules={[Navigation, Pagination]}
+					className="mySwiper max-w-[343px] lg:max-w-[600px] !pb-10"
 					navigation={{
 						nextEl: ".project-arrow-left",
 						prevEl: ".project-arrow-right",
 					}}
 					slidesPerView={1}
-					effect={"fade"}
 					pagination={{
 						clickable: true,
 					}}
@@ -114,82 +217,67 @@ office).</li>
 					{data?.map((item, index) => {
 						return (
 							<SwiperSlide key={index}>
-								{portfolioProjectsData.map((project, index) => {
-									return (
-										<CarouselItem key={project.id}>
-											<motion.div
-												initial={{ opacity: 0 }}
-												whileInView={{ opacity: 1 }}
-												transition={{
-													duration: 1.2,
-												}}
-												className="flex h-full flex-col justify-center space-y-3 text-center md:space-y-4"
-											>
-												<motion.img
-													initial={{ translateY: -100 }}
-													whileInView={{ translateY: 0 }}
-													transition={{
-														duration: 0.7,
-													}}
-													src={project.attributes?.thumb?.data?.attributes?.url}
-													alt={project.attributes?.name}
-													title={project.attributes?.name}
-													className="mx-auto block w-3/4 flex-shrink-0 rounded-lg md:w-1/2"
-												/>
-												<motion.div
-													initial={{ translateY: 100 }}
-													whileInView={{ translateY: 0 }}
-													transition={{
-														duration: 0.7,
-													}}
-													className="space-y-3 md:space-y-4"
-												>
-													<h2 className="mt-3 text-18 font-bold uppercase md:text-24">
-														<span className="decoration-color-secondary-light/50 underline">
-															Case Study {index + 1} of{" "}
-															{portfolioProjectsData.length}:
-														</span>{" "}
-														{project.attributes?.name}
-													</h2>
-													<p className="mx-auto w-full text-justify text-14 md:w-3/4 md:text-center md:text-16">
-														{project.attributes?.description}
-													</p>
-													<div className="mx-auto flex w-full flex-wrap justify-center gap-2 text-14 md:text-16">
-														{project.attributes?.technologies?.data.map(
-															(technology, index) => {
-																return (
-																	<Image
-																		key={index}
-																		src={
-																			technology.attributes?.thumb?.data
-																				?.attributes?.url || ""
-																		}
-																		alt={technology.attributes?.name || ""}
-																		title={technology.attributes?.name}
-																		width={48}
-																		height={48}
-																		className="bg-color-bg-dark-secondary h-7 w-7 rounded-full md:h-12  md:w-12"
-																	/>
-																);
-															}
-														)}
-													</div>
-													<div
-														className="project-content-format mx-auto mt-4 w-full max-w-[600px] text-left text-14 md:text-16"
-														dangerouslySetInnerHTML={{
-															__html: project.attributes?.content || "",
-														}}
+								<motion.div
+									initial={{ opacity: 0 }}
+									whileInView={{ opacity: 1 }}
+									transition={{
+										duration: 1.2,
+									}}
+									className="flex flex-col justify-center space-y-3 text-center md:space-y-4"
+								>
+									<motion.img
+										initial={{ translateY: -100 }}
+										whileInView={{ translateY: 0 }}
+										transition={{
+											duration: 0.7,
+										}}
+										src={item.imgProject}
+										alt={item.nameProject}
+										title={item.nameProject}
+										className="mx-auto block rounded-[16px]"
+									/>
+									<motion.div
+										initial={{ translateY: 100 }}
+										whileInView={{ translateY: 0 }}
+										transition={{
+											duration: 0.7,
+										}}
+										className="space-y-3 md:space-y-4"
+									>
+										<h2 className="mt-3 text-18 font-bold uppercase md:text-24">
+											<span className="decoration-color-secondary-light/50 underline">
+												Project {index + 1} of {data.length}:
+											</span>{" "}
+											{item.nameProject}
+										</h2>
+										<div className="mx-auto flex w-full flex-wrap justify-center gap-2 text-14 md:text-16">
+											{item?.listIcon.map((icon, index) => {
+												return (
+													<Image
+														key={index}
+														src={icon.icon || ""}
+														alt={icon?.name || ""}
+														title={icon?.name}
+														width={48}
+														height={48}
+														className="bg-color-bg-dark-secondary h-7 w-7 rounded-full md:h-12  md:w-12"
 													/>
-												</motion.div>
-											</motion.div>
-										</CarouselItem>
-									);
-								})}
+												);
+											})}
+										</div>
+										<div
+											className="project-content-format mx-auto mt-4 w-full max-w-[600px] text-left text-14 md:text-16"
+											dangerouslySetInnerHTML={{
+												__html: item.content || "",
+											}}
+										/>
+									</motion.div>
+								</motion.div>
 							</SwiperSlide>
 						);
 					})}
-				</Swiper> */}
-				<button className="project-arrow-left absolute -right-4 -translate-y-1/2 top-1/2 z-10 hidden bg-white cursor-pointer rounded-full border hover:border-red-1 hover:fill-red-1 p-[11px] duration-200  md:block">
+				</Swiper>
+				<button className="project-arrow-left absolute right-0 -translate-y-1/2 top-1/2 z-10 hidden bg-white cursor-pointer rounded-full border hover:border-red-1 hover:fill-red-1 p-[11px] duration-200  md:block">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="14"
@@ -221,7 +309,7 @@ office).</li>
 						</defs>
 					</svg>
 				</button>
-				<button className="project-arrow-right absolute -left-4 -translate-y-1/2 top-1/2 z-10 hidden bg-white cursor-pointer rounded-full border hover:border-red-1 hover:fill-red-1 p-[11px] duration-200 md:block">
+				<button className="project-arrow-right absolute left-0 -translate-y-1/2 top-1/2 z-10 hidden bg-white cursor-pointer rounded-full border hover:border-red-1 hover:fill-red-1 p-[11px] duration-200 md:block">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						width="14"
