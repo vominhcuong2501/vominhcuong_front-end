@@ -9,7 +9,7 @@ type Props = {}
 
 const Hero = ({ }: Props) => {
   const [slogan] = useTypewriter({
-    words: ['Hi, The Name Võ Minh Cường'],
+    words: ['Hi, The Name Vo Minh Cuong'],
     loop: true,
     deleteSpeed: 20,
     typeSpeed: 50
@@ -40,7 +40,6 @@ const Hero = ({ }: Props) => {
           <Image
             className='relative mx-auto h-32 w-32 rounded-full object-cover'
             src='/cam-bong-bong.jpg'
-            // src='https://cdn.sanity.io/images/gm83a3pq/production/b0b000c16ab8ea8df2bfc42f762845d0fd1be3b0-828x828.jpg'
             alt='avatar'
             width={128}
             height={128}
@@ -53,23 +52,23 @@ const Hero = ({ }: Props) => {
             <span>{slogan}</span>
             <Cursor cursorColor='#ea580c' />
           </h1>
-          <div className='z-1 relative mx-auto flex justify-center gap-6 text-xs md:gap-10 md:text-sm'>
-            <a href='#portfolioAbout'>
+          <div className='z-1 relative mx-auto flex justify-center gap-6 text-xs md:gap-10 md:text-sm '>
+            <a href='#portfolioAbout' className='transition-all duration-300 hover:text-[#e60000]'>
               <button className='uppercase' title='About' aria-label='About'>
                 About
               </button>
             </a>
-            <a href='#portfolioExperience'>
+            <a href='#portfolioExperience' className='transition-all duration-300 hover:text-[#e60000]'>
               <button className='uppercase' title='Experience' aria-label='Experience'>
                 Experience
               </button>
             </a>
-            <a href='#portfolioSkills'>
+            <a href='#portfolioSkills' className='transition-all duration-300 hover:text-[#e60000]'>
               <button className='uppercase' title='Skills' aria-label='Skills'>
                 Skills
               </button>
             </a>
-            <a href='#portfolioProjects'>
+            <a href='#portfolioProjects' className='transition-all duration-300 hover:text-[#e60000]'>
               <button className='uppercase' title='Projects' aria-label='Projects'>
                 Projects
               </button>
