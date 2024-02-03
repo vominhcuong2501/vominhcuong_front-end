@@ -13,6 +13,16 @@ const config: Config = {
 				"gradient-conic":
 					"conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
 			},
+			boxShadow: {
+				1: "0px 4px 10px rgba(0,0,0,0.15)",
+				2: "0px 1px 3px 0px rgba(0, 0, 0, 0.20);",
+				3: "0px 2px 0px 0px rgba(0, 0, 0, 0.25)",
+				4: "2px 2px 8px 0px rgba(14, 52, 148, 0.20);",
+				5: "0px 4px 10px 0px rgba(0, 0, 0, 0.15);",
+				6: "0px 4px 28px 0px rgba(0, 0, 0, 0.10);",
+				7: "0px 3px 10px 0px rgba(0, 0, 0, 0.20);",
+				8: "0px 3px 10px 0px rgba(0, 0, 0, 0.05), 0px 10px 50px 0px rgba(0, 0, 0, 0.06);",
+			},
 			colors: {
 				border: "hsl(var(--border))",
 				input: "hsl(var(--input))",
