@@ -5,52 +5,43 @@
 @tailwind utilities;
 
 body {
-	/* background: linear-gradient(
+  /* background: linear-gradient(
 		180deg,
 		rgba(4, 0, 68, 1) 0%,
 		rgba(9, 9, 121, 1) 65%,
 		rgba(0, 11, 210, 1) 100%
 	); */
-	background-image: radial-gradient(#0000, #673ab72e),
-		linear-gradient(-90deg, #2000587d, #000, #9c27b02b),
-		linear-gradient(0deg, #ff98002e, #000, #8bc34a5e);
-	background-color: #000;
-	box-shadow: 0 0 150vmin 11vmin #000 inset;
-	font-family: "Poppins", sans-serif !important;
+  background-image: radial-gradient(#0000, #673ab72e),
+    linear-gradient(-90deg, #2000587d, #000, #9c27b02b),
+    linear-gradient(0deg, #ff98002e, #000, #8bc34a5e);
+  background-color: #000;
+  box-shadow: 0 0 150vmin 11vmin #000 inset;
+  font-family: "Poppins", sans-serif !important;
 }
 
 .text-gradient-red {
-	background: linear-gradient(225deg, #ff6a00 0%, #ee0979 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  background: linear-gradient(225deg, #ff6a00 0%, #ee0979 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-blue {
-	background: linear-gradient(
-		0deg,
-		rgba(34, 193, 195, 1) 25%,
-		rgba(45, 122, 253, 1) 100%
-	);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 25%,
+    rgba(45, 122, 253, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .swiper-pagination-bullet {
-	background-color: white !important;
+  background-color: white !important;
 }
 
-/* .custom-pagination {
-	width: 120px !important;
-	background-color: transparent !important;
-	height: auto !important;
-	color: white !important;
+.experience-arrow-left:disabled,
+.experience-arrow-right:disabled,
+.project-arrow-left:disabled,
+.project-arrow-right:disabled {
+  cursor: no-drop;
 }
-
-.parentSwiper .swiper-pagination {
-	top: 0 !important;
-	display: flex !important;
-	left: 50% !important;
-	transform: translateX(-50%) !important;
-	gap: 20px !important;
-	z-index: 999 !important;
-} */
