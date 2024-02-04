@@ -88,13 +88,13 @@ const Hero = ({ handleClick }: Props) => {
           >
             Education
           </p>
-          <p
+          {/* <p
             className="transition-all duration-300 hover:text-[#22bcc3] uppercase font-semibold cursor-pointer"
             title="Contact"
             onClick={() => handleClick(6)}
           >
             Contact
-          </p>
+          </p> */}
         </div>
       </motion.div>
     </div>

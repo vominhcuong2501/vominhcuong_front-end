@@ -76,9 +76,6 @@ export default function Home() {
         <SwiperSlide>
           <Education />
         </SwiperSlide>
-        <SwiperSlide>
-          <Project />
-        </SwiperSlide>
       </Swiper>
     </section>
   );
