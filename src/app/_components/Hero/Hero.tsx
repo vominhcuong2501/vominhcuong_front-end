@@ -31,7 +31,7 @@ const Hero = ({ handleClick }: Props) => {
           opacity: [0.5, 0.5, 1, 1],
         }}
         transition={{
-          duration: 2,
+          duration: 1.5,
         }}
         className="space-y-5 text-white"
       >

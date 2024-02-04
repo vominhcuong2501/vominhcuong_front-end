@@ -56,6 +56,9 @@ const Project = () => {
 					https://sandbox.bincorporation.com/
 				</a>
 			</li>
+      <li class="text-14 lg:text-16">
+				Status: In Processing
+			</li>
 			<li class="text-14 lg:text-16">
 				Project description: Website introduces BIN CORPORATION GROUP, the
 				fields in which the group operates and recruitment information for the
@@ -211,11 +214,11 @@ const Project = () => {
 					https://sandbox.oneibc.com/
 				</a>
 			  </li>
+        <li class="text-14 lg:text-16">
+				Status: In Processing
+			</li>
 			  <li class="text-14 lg:text-16">
-			  Project description: One IBC Group specializes in providing pre-incorporation &
-			  post-incorporation services to entrepreneurs, investors, business owners around the
-			  world, ranging from offshore company formation, banking support to accounting &
-			  auditing services.
+			  Project description: Project description: One IBC Group specializes in providing offshore company formation, banking support to accounting & auditing services.
 			  </li>
 			  <li class="text-14 lg:text-16">Number of participants: 6</li>
 			  <li class="text-14 lg:text-16">
@@ -255,6 +258,7 @@ the provided design and analysis documentation.
             pagination={{
               clickable: true,
             }}
+            spaceBetween={10}
             effect={"fade"}
             navigation={{
               nextEl: ".project-arrow-left",
@@ -270,7 +274,7 @@ the provided design and analysis documentation.
                     transition={{
                       duration: 1.2,
                     }}
-                    className="flex flex-col justify-center space-y-3 text-center md:space-y-4"
+                    className="flex flex-col justify-center  text-center "
                   >
                     <motion.div
                       initial={{ translateY: 100 }}
@@ -278,7 +282,6 @@ the provided design and analysis documentation.
                       transition={{
                         duration: 0.7,
                       }}
-                      className="space-y-3 md:space-y-4"
                     >
                       <ProjectItem content={item} />
                     </motion.div>

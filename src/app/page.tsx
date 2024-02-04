@@ -10,6 +10,7 @@ import Project from "./_components/Project";
 import Skills from "./_components/Skills";
 import React, { useRef, useState } from "react";
 import "swiper/swiper-bundle.css";
+import Education from "./_components/Education";
 
 export default function Home() {
   // Kích hoạt các module cần thiết của Swiper
@@ -23,9 +24,9 @@ export default function Home() {
   };
 
   return (
-    <section className="max-w-[1200px] mx-auto relative">
+    <section className="max-w-[1200px] mx-auto ">
       <button
-        className=" absolute right-10 bottom-10 z-10 bg-white cursor-pointer rounded-full p-4 rotate-90"
+        className=" absolute right-2 bottom-2 md:right-10 md:bottom-10 z-10 bg-white cursor-pointer rounded-full p-4 rotate-90"
         onClick={() => goToSlide(0)}
       >
         <svg
@@ -73,7 +74,7 @@ export default function Home() {
           <Project />
         </SwiperSlide>
         <SwiperSlide>
-          <Project />
+          <Education />
         </SwiperSlide>
         <SwiperSlide>
           <Project />

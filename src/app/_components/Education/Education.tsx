@@ -6,85 +6,48 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
-import { Navigation, EffectFade, Pagination } from "swiper/modules";
-import Image from "next/image";
-
+import { Navigation, Pagination } from "swiper/modules";
 const Experience = () => {
   const data = [
     {
-      logoCompany: "/logo_company_bincg.png",
-      position: "Front-end Web Developer",
-      nameCompany: "BIN Corporation Group",
-      descriptionCompany:
-        "BIN Corporation Group is an international multi-disciplinary company based in Ho Chi Minh City, Vietnam. I joined BIN Corporation Group as a Frontend Developer, specializing in creating user interfaces for corporate websites.",
-      time: "18/10/2022 - Now",
-      listIcon: [
-        {
-          name: "HTML",
-          icon: "/icon-skill-html.png",
-        },
-        {
-          name: "CSS",
-          icon: "/icon-skill-css.png",
-        },
-        {
-          name: "Javascript",
-          icon: "/icon-skill-javascript.png",
-        },
-        {
-          name: "NextJs",
-          icon: "/icon-skill-nextjs.png",
-        },
-        {
-          name: "ReactJs",
-          icon: "/icon-skill-reactjs.png",
-        },
-        {
-          name: "Tailwindcss",
-          icon: "/icon-skill-tailwindcss.png",
-        },
-        {
-          name: "Typescript",
-          icon: "/icon-skill-typescript.png",
-        },
-        {
-          name: "Tanstack Query",
-          icon: "/icon-skill-tanstack-query.png",
-        },
-      ],
+      logo: "/logo-cyber.svg",
+      name: "CYBERSOFT ACADEMY",
+      description: `<ul class="pl-5 list-disc">
+      <li class="text-14 lg:text-16">
+      Learn about Front-End Developer
+      </li>
+      <li class="text-14 lg:text-16">
+      Study and complete the small project assigned at Cybersoft Academy
+    </li>
+      <li class="text-14 lg:text-16">
+      Deploy real projects with HTML , CSS, Bootstrap, SASS, Javascript, Jquery, ReactJS
+      </li>
+      <li class="text-14 lg:text-16">Build project functions with API calls from Back-End to interact with Front-End
+      through real projects
+      </li>
+    </ul>`,
+      time: "02.2022 - 09.2022",
     },
     {
-      logoCompany: "/wonderlabs.png",
-      position: "Front-end Web Developer",
-      nameCompany: "WONDERLABS",
-      descriptionCompany:
-        "Wonderlabs is a venture-capital backed service that runs offshore software development centres in Asia. We work closely with global partners that develop innovative, state-of-the-art software and IOT products.",
-      time: "05/07/2022 - 05/10/2022",
-      listIcon: [
-        {
-          name: "HTML",
-          icon: "/icon-skill-html.png",
-        },
-        {
-          name: "CSS",
-          icon: "/icon-skill-css.png",
-        },
-        {
-          name: "Javascript",
-          icon: "/icon-skill-javascript.png",
-        },
-      ],
+      logo: "/logo-stu.png",
+      name: "SAI GON TECHNOLOGY UNIVERSITY",
+      description: `
+      <p class="text-14 lg:text-16 text-center">
+      Major in Business Administration
+      </p>
+    `,
+      time: "07.2014 - 10.2018",
     },
   ];
 
   return (
     <div
       className="relative h-screen max-w-[1200px] mx-auto flex justify-center"
-      id="portfolioExperience"
+      id="portfolioEducation"
     >
       <div className="absolute top-1/2 -translate-y-[50%]">
         <h2 className="text-24 uppercase md:text-32 font-bold text-center pb-2 md:pb-5 text-gradient-red tracking-[10px] md:tracking-[20px]">
-          Experiences
+          Education
         </h2>
 
         <motion.div
@@ -101,24 +64,19 @@ const Experience = () => {
           }}
         >
           <Swiper
-            modules={[Navigation, EffectFade, Pagination]}
-            className="mySwiper px-4 !pb-10 md:max-w-[750px]"
+            modules={[Navigation, Pagination]}
+            className="mySwiper px-4 !pb-10  max-w-[343px] md:max-w-[700px]"
             slidesPerView={1}
-            effect={"fade"}
             pagination={{
               clickable: true,
             }}
             spaceBetween={10}
-            navigation={{
-              nextEl: ".experience-arrow-left",
-              prevEl: ".experience-arrow-right",
-            }}
           >
             {data?.map((item, index) => {
               return (
                 <SwiperSlide key={index}>
-                  <article className="mx-auto flex h-full items-center justify-center transition-all max-w-[343px] md:max-w-[750px]">
-                    <div className="flex flex-col items-center justify-center gap-3 rounded-[16px] bg-slate-800 p-5 ">
+                  <article className="mx-auto flex h-full items-center justify-center transition-all max-w-[343px] md:max-w-[700px]">
+                    <div className="flex flex-col items-center justify-center gap-3 rounded-[16px] bg-white p-5 ">
                       <motion.img
                         initial={{
                           y: -100,
@@ -130,37 +88,23 @@ const Experience = () => {
                         transition={{
                           duration: 1,
                         }}
-                        className="relative mx-auto h-24 w-24 shrink-0 rounded-full bg-white object-cover 2xl:h-36 2xl:w-36"
-                        src={item.logoCompany}
-                        alt={item.nameCompany}
+                        className="relative mx-auto shrink-0  object-cover p-4"
+                        src={item.logo}
+                        alt={item.name}
                       />
 
-                      <div className="space-y-3 md:space-y-4 text-[#fff]">
-                        <h3 className="text-center text-16 font-light md:text-20 2xl:text-28 text-[#fff]">
-                          {item.position}
-                        </h3>
+                      <div className="space-y-2 md:space-y-3 text-slate-800">
                         <h2 className="text-center text-18 font-bold uppercase tracking-widest md:text-24 text-gradient-blue">
-                          {item.nameCompany}
+                          {item.name}
                         </h2>
-                        <div className="flex justify-center gap-2">
-                          {item.listIcon?.map((icon, index) => {
-                            return (
-                              <Image
-                                key={index}
-                                src={icon.icon}
-                                alt={icon.name}
-                                title={icon.name}
-                                width={48}
-                                height={48}
-                                className="h-7 w-7 rounded-full md:h-12  md:w-12"
-                              />
-                            );
-                          })}
-                        </div>
-                        <p className="text-color-text-light-secondary">
-                          {item.time}
+                        <p className="text-color-text-light-secondary text-center">
+                          ({item.time})
                         </p>
-                        <p>{item.descriptionCompany}</p>
+                        <div
+                          dangerouslySetInnerHTML={{
+                            __html: item.description || "",
+                          }}
+                        />
                       </div>
                     </div>
                   </article>
@@ -168,7 +112,7 @@ const Experience = () => {
               );
             })}
           </Swiper>
-          <button className="experience-arrow-left absolute -right-[60px] -translate-y-1/2 top-1/2 z-10 hidden bg-white cursor-pointer rounded-full border hover:border-red-1 hover:fill-red-1 p-[11px] duration-200  md:block">
+          <button className="education-arrow-left absolute -right-[60px] -translate-y-1/2 top-1/2 z-10 hidden bg-white cursor-pointer rounded-full border hover:border-red-1 hover:fill-red-1 p-[11px] duration-200  md:block">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="14"
@@ -200,7 +144,7 @@ const Experience = () => {
               </defs>
             </svg>
           </button>
-          <button className="experience-arrow-right absolute -left-[60px] -translate-y-1/2 top-1/2 z-10 hidden bg-white cursor-pointer rounded-full border hover:border-red-1 hover:fill-red-1 p-[11px] duration-200 md:block">
+          <button className="education-arrow-right absolute -left-[60px] -translate-y-1/2 top-1/2 z-10 hidden bg-white cursor-pointer rounded-full border hover:border-red-1 hover:fill-red-1 p-[11px] duration-200 md:block">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="14"

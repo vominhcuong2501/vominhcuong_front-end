@@ -22,7 +22,7 @@ const About = () => {
           transition={{
             duration: 1.2,
           }}
-          className="flex flex-col items-center justify-center gap-4 lg:gap-8 lg:flex-row  px-4"
+          className="flex flex-col items-center justify-center gap-4 md:gap-8 md:flex-row  px-4"
         >
           <motion.img
             initial={{
@@ -41,23 +41,23 @@ const About = () => {
           />
 
           <ul className="list-disc pl-5 md:w-[500px] text-white">
-            <li className="text-14 md:text-18">
+            <li className="text-14 md:text-16">
               My name is Vo Minh Cuong, and I was born in 1996. Currently, I am
               living and working in Ho Chi Minh City, Vietnam as a Frontend Web
               Developer with two year of experience.
             </li>
-            <li className="text-14 md:text-18">
+            <li className="text-14 md:text-16">
               I love learning new technologies and building valuable application
               that helps others with their work. I’m considered a team-player
               because I like to help other and tend to work well within the
               group.
             </li>
-            <li className="text-14 md:text-18">
+            <li className="text-14 md:text-16">
               Short-term goal: Having a challenging job, improve the experience,
               training working skills effectively, accurately and quickly.
               Improve technical knowledge.
             </li>
-            <li className="text-14 md:text-18">
+            <li className="text-14 md:text-16">
               Long-term goal: Learn and strong in many frameworks and languages.
               Become a Fullstack Developer
             </li>
