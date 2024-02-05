@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
-const Experience = () => {
+const Education = () => {
 	const data = [
 		{
 			logo: "/logo-cyber.svg",
@@ -70,6 +70,10 @@ const Experience = () => {
 							clickable: true,
 						}}
 						spaceBetween={10}
+						navigation={{
+							nextEl: ".education-arrow-left",
+							prevEl: ".education-arrow-right",
+						}}
 					>
 						{data?.map((item, index) => {
 							return (
@@ -169,4 +173,4 @@ const Experience = () => {
 	);
 };
 
-export default Experience;
+export default Education;
