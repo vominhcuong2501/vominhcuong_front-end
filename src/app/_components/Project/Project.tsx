@@ -248,7 +248,7 @@ the provided design and analysis documentation.
 						duration: 1.2,
 					}}
 				>
-					<h2 className="text-24 uppercase md:text-32 font-bold text-center pb-2 md:pb-5  tracking-[10px] md:tracking-[20px] title-portfolio">
+					<h2 className="text-24 uppercase md:text-32 font-bold text-center pb-2 md:pb-5  tracking-[10px] md:tracking-[20px] text-gradient-red">
 						Projects
 					</h2>
 					<Swiper

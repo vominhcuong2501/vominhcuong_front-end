@@ -56,18 +56,13 @@ const Skills = () => {
 		},
 	];
 
-	const style = {
-		boxShadow:
-			"inset 0 0 60px whitesmoke,inset 20px 0 80px #f0f,inset -20px 0 80px #0ff,inset 20px 0 300px #f0f,inset -20px 0 300px #0ff,	0 0 50px #fff,-10px 0 80px #f0f,10px 0 80px #0ff;",
-	};
-
 	return (
 		<div
 			className="relative h-screen max-w-[1200px] mx-auto flex justify-center"
 			id="portfolioSkills"
 		>
 			<div className="absolute top-1/2 -translate-y-[50%]">
-				<h2 className="text-24 uppercase md:text-32 font-bold text-center pb-2 md:pb-5 title-portfolio tracking-[10px] md:tracking-[20px]">
+				<h2 className="text-24 uppercase md:text-32 font-bold text-center pb-2 md:pb-5 text-gradient-red tracking-[10px] md:tracking-[20px]">
 					Skills
 				</h2>
 				<motion.div
@@ -104,10 +99,7 @@ const Skills = () => {
 									title={skill?.name}
 								/>
 
-								<motion.div
-									className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white h-full w-full flex justify-center items-center scale-0 group-hover:scale-100 transition-all duration-200 rounded-full "
-									style={style}
-								>
+								<motion.div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white h-full w-full flex justify-center items-center scale-0 group-hover:scale-100 transition-all duration-200 rounded-full shadow-10">
 									<h4 className="font-bold">{skill?.name}</h4>
 								</motion.div>
 							</div>

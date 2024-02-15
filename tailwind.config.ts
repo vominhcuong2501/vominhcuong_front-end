@@ -22,6 +22,8 @@ const config: Config = {
 				6: "0px 4px 28px 0px rgba(0, 0, 0, 0.10);",
 				7: "0px 3px 10px 0px rgba(0, 0, 0, 0.20);",
 				8: "0px 3px 10px 0px rgba(0, 0, 0, 0.05), 0px 10px 50px 0px rgba(0, 0, 0, 0.06);",
+				9: "0px 0px 47px 20px rgba(255,255,255,0.3);",
+				10: "inset 0 0 60px whitesmoke,inset 20px 0 80px #f0f,inset -20px 0 80px #0ff,inset 20px 0 300px #f0f,inset -20px 0 300px #0ff,	0 0 50px #fff,-10px 0 80px #f0f,10px 0 80px #0ff;",
 			},
 			colors: {
 				border: "hsl(var(--border))",
