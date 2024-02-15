@@ -17,6 +17,9 @@ const Hero = ({ handleClick }: Props) => {
 		typeSpeed: 50,
 	});
 
+	const style = {
+		boxShadow: "0px 0px 47px 20px rgba(255,255,255,0.3);",
+	};
 	return (
 		<div
 			className="text-center w-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 "
@@ -35,7 +38,10 @@ const Hero = ({ handleClick }: Props) => {
 				}}
 				className="space-y-5 text-white"
 			>
-				<div className="hidden md:block border border-white h-[550px] w-[550px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full"></div>
+				<div
+					style={style}
+					className="hidden md:block  h-[550px] w-[550px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full"
+				></div>
 				<Image
 					className="relative mx-auto h-40 w-40 rounded-full object-cover object-top"
 					src="/cam-bong-bong.jpg"
@@ -44,10 +50,10 @@ const Hero = ({ handleClick }: Props) => {
 					height={1078}
 					priority
 				/>
-				<h2 className="text-xs text-center uppercase tracking-[8px] md:text-sm ">
+				<h2 className="text-xs text-center uppercase tracking-[8px] md:text-sm font-semibold">
 					Frontend Developer
 				</h2>
-				<h1 className="px-4 text-20 font-bold md:px-10 md:text-28 text-gradient-red text-center h-10 w-full">
+				<h1 className="px-4 text-20 font-bold md:px-10 md:text-28  text-center h-10 w-full title-portfolio">
 					{slogan}
 				</h1>
 				<div className="z-1 relative mx-auto flex justify-center gap-6 text-xs md:gap-10 md:text-sm ">

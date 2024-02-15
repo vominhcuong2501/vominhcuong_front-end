@@ -46,7 +46,7 @@ const Education = () => {
 			id="portfolioEducation"
 		>
 			<div className="absolute top-1/2 -translate-y-[50%]">
-				<h2 className="text-24 uppercase md:text-32 font-bold text-center pb-2 md:pb-5 text-gradient-red tracking-[10px] md:tracking-[20px]">
+				<h2 className="text-24 uppercase md:text-32 font-bold text-center pb-2 md:pb-5 title-portfolio tracking-[10px] md:tracking-[20px]">
 					Education
 				</h2>
 				<motion.div
