@@ -41,23 +41,23 @@ const About = () => {
 					/>
 
 					<ul className="list-disc pl-5 md:w-[500px] text-white">
-						<li className="text-14 md:text-16">
+						<li className="text-12 md:text-14 ">
 							My name is Vo Minh Cuong, and I was born in 1996. Currently, I am
 							living and working in Ho Chi Minh City, Vietnam as a Frontend Web
 							Developer with 1.5 year of experience.
 						</li>
-						<li className="text-14 md:text-16">
+						<li className="text-12 md:text-14 mt-2 md:mt-4">
 							I love learning new technologies and building valuable application
 							that helps others with their work. I’m considered a team-player
 							because I like to help other and tend to work well within the
 							group.
 						</li>
-						<li className="text-14 md:text-16">
+						<li className="text-12 md:text-14 mt-2 md:mt-4">
 							Short-term goal: Having a challenging job, improve the experience,
 							training working skills effectively, accurately and quickly.
 							Improve technical knowledge.
 						</li>
-						<li className="text-14 md:text-16">
+						<li className="text-12 md:text-14 mt-2 md:mt-4">
 							Long-term goal: Learn and strong in many frameworks and languages.
 							Become a Fullstack Developer
 						</li>

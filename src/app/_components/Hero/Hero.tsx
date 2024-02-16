@@ -65,20 +65,19 @@ const Hero = ({ handleClick }: Props) => {
 					>
 						Projects
 					</p>
-
-					<p
-						className="transition-all duration-300 hover:text-[#22bcc3] uppercase font-semibold cursor-pointer"
-						title="Skills"
-						onClick={() => handleClick(3)}
-					>
-						Skills
-					</p>
 					<p
 						className="transition-all duration-300 hover:text-[#22bcc3] uppercase font-semibold cursor-pointer"
 						title="Experience"
-						onClick={() => handleClick(4)}
+						onClick={() => handleClick(3)}
 					>
 						Experiences
+					</p>
+					<p
+						className="transition-all duration-300 hover:text-[#22bcc3] uppercase font-semibold cursor-pointer"
+						title="Skills"
+						onClick={() => handleClick(4)}
+					>
+						Skills
 					</p>
 				</div>
 				<div className="z-1 relative mx-auto flex justify-center gap-6 text-xs md:gap-10 md:text-sm ">

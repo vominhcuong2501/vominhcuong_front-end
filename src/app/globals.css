@@ -45,3 +45,7 @@ body {
 .project-arrow-right:disabled {
 	cursor: no-drop;
 }
+
+#portfolioProjects .swiper-pagination {
+	bottom: -0;
+}

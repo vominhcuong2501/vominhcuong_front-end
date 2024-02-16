@@ -45,7 +45,7 @@ const Project = () => {
 				},
 			],
 			content: `<ul class="pl-5 list-disc">
-			<li class="text-14 lg:text-16">
+			<li class="text-12 lg:text-14">
 				Website:
 				<a
 					href="https://sandbox.bincorporation.com/"
@@ -56,16 +56,16 @@ const Project = () => {
 					https://sandbox.bincorporation.com/
 				</a>
 			</li>
-      <li class="text-14 lg:text-16">
+      <li class="text-12 lg:text-14">
 				Status: In Processing
 			</li>
-			<li class="text-14 lg:text-16">
+			<li class="text-12 lg:text-14">
 				Project description: Website introduces BIN CORPORATION GROUP, the
 				fields in which the group operates and recruitment information for the
 				group
 			</li>
-			<li class="text-14 lg:text-16">Number of participants: 5</li>
-			<li class="text-14 lg:text-16">
+			<li class="text-12 lg:text-14">Number of participants: 5</li>
+			<li class="text-12 lg:text-14">
 				Tasks in the project: Build a website interface by design from figma
 				into code.
 			</li>
@@ -106,7 +106,7 @@ const Project = () => {
 				},
 			],
 			content: `<ul class="pl-5 list-disc">
-			<li class="text-14 lg:text-16">
+			<li class="text-12 lg:text-14">
 				Website:
 				<a
 					href="https://www.travelnerinsurance.com"
@@ -117,12 +117,12 @@ const Project = () => {
 					https://www.travelnerinsurance.com
 				</a>
 			</li>
-			<li class="text-14 lg:text-16">
+			<li class="text-12 lg:text-14">
 			Project description: Travelner Insurance is a global booking platform for travel
 			insurance.
 			</li>
-			<li class="text-14 lg:text-16">Number of participants: 10</li>
-			<li class="text-14 lg:text-16">
+			<li class="text-12 lg:text-14">Number of participants: 10</li>
+			<li class="text-12 lg:text-14">
 			Tasks in the project: implement the user interface and user functionalities based on
 			the provided design and analysis documentation.
 			</li>
@@ -150,7 +150,7 @@ const Project = () => {
 				},
 			],
 			content: `<ul class="pl-5 list-disc">
-			<li class="text-14 lg:text-16">
+			<li class="text-12 lg:text-14">
 				Website:
 				<a
 					href="https://www.meliwa.vn/"
@@ -161,11 +161,11 @@ const Project = () => {
 					https://www.meliwa.vn/
 				</a>
 			</li>
-			<li class="text-14 lg:text-16">
+			<li class="text-12 lg:text-14">
 			Project description: This is an e-commerce website. Main product is air purifier.
 			</li>
-			<li class="text-14 lg:text-16">Number of participants: 4</li>
-			<li class="text-14 lg:text-16">
+			<li class="text-12 lg:text-14">Number of participants: 4</li>
+			<li class="text-12 lg:text-14">
 			Tasks in the project: Build a website interface by design from figma into code.
 			</li>
 		</ul>`,
@@ -204,7 +204,7 @@ const Project = () => {
 				},
 			],
 			content: `<ul class="pl-5 list-disc">
-			  <li class="text-14 lg:text-16">
+			  <li class="text-12 lg:text-14">
 				  Website: <a
 					href="https://sandbox.oneibc.com/"
 					target="_blank"
@@ -214,14 +214,14 @@ const Project = () => {
 					https://sandbox.oneibc.com/
 				</a>
 			  </li>
-        <li class="text-14 lg:text-16">
+        <li class="text-12 lg:text-14">
 				Status: In Processing
 			</li>
-			  <li class="text-14 lg:text-16">
+			  <li class="text-12 lg:text-14">
 			  Project description: Project description: One IBC Group specializes in providing offshore company formation, banking support to accounting & auditing services.
 			  </li>
-			  <li class="text-14 lg:text-16">Number of participants: 6</li>
-			  <li class="text-14 lg:text-16">
+			  <li class="text-12 lg:text-14">Number of participants: 6</li>
+			  <li class="text-12 lg:text-14">
 			  Tasks in the project: implement the user interface and user functionalities based on
 the provided design and analysis documentation.
 			  </li>
@@ -234,7 +234,7 @@ the provided design and analysis documentation.
 			className="relative h-screen max-w-[1200px] mx-auto flex justify-center"
 			id="portfolioProjects"
 		>
-			<div className="absolute top-1/2 -translate-y-[50%]">
+			<div className="absolute top-1/2 -translate-y-[50%] ">
 				<motion.div
 					initial={{
 						opacity: 0,
@@ -253,13 +253,12 @@ the provided design and analysis documentation.
 					</h2>
 					<Swiper
 						modules={[Navigation, Pagination]}
-						className="mySwiper max-w-[343px] md:max-w-[700px] mx-auto"
+						className="mySwiper max-w-[343px] md:max-w-[700px] mx-auto !pb-[30px] md:!pb-0"
 						slidesPerView={1}
 						pagination={{
 							clickable: true,
 						}}
 						spaceBetween={10}
-						effect={"fade"}
 						navigation={{
 							nextEl: ".project-arrow-left",
 							prevEl: ".project-arrow-right",

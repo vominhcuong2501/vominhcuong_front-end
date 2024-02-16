@@ -117,7 +117,7 @@ const Experience = () => {
 						{data?.map((item, index) => {
 							return (
 								<SwiperSlide key={index}>
-									<article className="mx-auto flex h-full items-center justify-center transition-all max-w-[343px] md:max-w-[750px]">
+									<article className="mx-auto flex h-full items-center justify-center transition-all max-w-[343px] md:max-w-[750px] ">
 										<div className="flex flex-col items-center justify-center gap-3 rounded-[16px] bg-slate-800 p-5 ">
 											<motion.img
 												initial={{
@@ -136,7 +136,7 @@ const Experience = () => {
 											/>
 
 											<div className="space-y-3 md:space-y-4 text-[#fff]">
-												<h3 className="text-center text-16 font-light md:text-20 2xl:text-28 text-[#fff]">
+												<h3 className="text-center text-16 font-semibold md:text-20 2xl:text-28 text-[#fff]">
 													{item.position}
 												</h3>
 												<h2 className="text-center text-18 font-bold uppercase tracking-widest md:text-24 text-gradient-blue">
@@ -157,10 +157,12 @@ const Experience = () => {
 														);
 													})}
 												</div>
-												<p className="text-color-text-light-secondary">
+												<p className="text-12 md:text-14 font-normal leading-1-4 text-[#fff]">
 													{item.time}
 												</p>
-												<p>{item.descriptionCompany}</p>
+												<p className="text-12 md:text-14 font-normal leading-1-4 text-[#fff]">
+													{item.descriptionCompany}
+												</p>
 											</div>
 										</div>
 									</article>

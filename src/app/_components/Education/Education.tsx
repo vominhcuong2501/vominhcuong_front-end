@@ -13,16 +13,16 @@ const Education = () => {
 			logo: "/logo-cyber.svg",
 			name: "CYBERSOFT ACADEMY",
 			description: `<ul class="pl-5 list-disc">
-      <li class="text-14 lg:text-16">
+      <li class="text-12 lg:text-14">
       Learn about Front-End Developer
       </li>
-      <li class="text-14 lg:text-16">
+      <li class="text-12 lg:text-14">
       Study and complete the small project assigned at Cybersoft Academy
     </li>
-      <li class="text-14 lg:text-16">
+      <li class="text-12 lg:text-14">
       Deploy real projects with HTML , CSS, Bootstrap, SASS, Javascript, Jquery, ReactJS
       </li>
-      <li class="text-14 lg:text-16">Build project functions with API calls from Back-End to interact with Front-End
+      <li class="text-12 lg:text-14">Build project functions with API calls from Back-End to interact with Front-End
       through real projects
       </li>
     </ul>`,
@@ -32,7 +32,7 @@ const Education = () => {
 			logo: "/logo-stu.png",
 			name: "SAI GON TECHNOLOGY UNIVERSITY",
 			description: `
-      <p class="text-14 lg:text-16 text-center">
+      <p class="text-12 lg:text-14 text-center">
       Major in Business Administration
       </p>
     `,
@@ -97,10 +97,10 @@ const Education = () => {
 											/>
 
 											<div className="space-y-2 md:space-y-3 text-slate-800">
-												<h2 className="text-center text-18 font-bold uppercase tracking-widest md:text-24 text-gradient-blue">
+												<h2 className="text-center text-16 md:text-18 font-bold uppercase tracking-widest md:text-24 text-gradient-blue">
 													{item.name}
 												</h2>
-												<p className="text-color-text-light-secondary text-center">
+												<p className="text-color-text-light-secondary text-center text-12 md:text-14">
 													({item.time})
 												</p>
 												<div

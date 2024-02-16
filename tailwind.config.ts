@@ -29,7 +29,13 @@ const config: Config = {
 				border: "hsl(var(--border))",
 				input: "hsl(var(--input))",
 				ring: "hsl(var(--ring))",
-				background: "hsl(var(--background))",
+				background: {
+					1: "#ffffff",
+					2: "#F0F0F0",
+					3: "#85B915",
+					4: "#E9E9E9",
+					5: "#FFEBEB",
+				},
 				foreground: "hsl(var(--foreground))",
 				dark: "#333333",
 				primary: {

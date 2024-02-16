@@ -63,10 +63,10 @@ export default function Home() {
 					<Project />
 				</SwiperSlide>
 				<SwiperSlide>
-					<Skills />
+					<Experience />
 				</SwiperSlide>
 				<SwiperSlide>
-					<Experience />
+					<Skills />
 				</SwiperSlide>
 				<SwiperSlide>
 					<Education />
