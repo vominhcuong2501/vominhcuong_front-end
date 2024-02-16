@@ -50,7 +50,7 @@ const Hero = ({ handleClick }: Props) => {
 				<h1 className="px-4 text-20 font-bold md:px-10 md:text-28  text-center h-10 w-full text-gradient-red">
 					{slogan}
 				</h1>
-				<div className="z-1 relative mx-auto flex justify-center text-xs gap-4 md:text-sm ">
+				<div className="z-1 relative mx-auto flex justify-center text-xs gap-2 md:gap-4 md:text-sm ">
 					<p
 						className="transition-all duration-300 hover:shadow-10 hover:text-black p-1 rounded uppercase font-semibold cursor-pointer"
 						title="About"
@@ -74,17 +74,17 @@ const Hero = ({ handleClick }: Props) => {
 					</p>
 					<p
 						className="transition-all duration-300 hover:shadow-10 hover:text-black p-1 rounded uppercase font-semibold cursor-pointer"
-						title="Education"
-						onClick={() => handleClick(5)}
-					>
-						Education
-					</p>
-					<p
-						className="transition-all duration-300 hover:shadow-10 hover:text-black p-1 rounded uppercase font-semibold cursor-pointer"
 						title="Skills"
 						onClick={() => handleClick(4)}
 					>
 						Skills
+					</p>
+					<p
+						className="transition-all duration-300 hover:shadow-10 hover:text-black p-1 rounded uppercase font-semibold cursor-pointer"
+						title="Education"
+						onClick={() => handleClick(5)}
+					>
+						Education
 					</p>
 				</div>
 				<div className="z-1 relative mx-auto flex justify-center gap-6 text-32 md:gap-10">
