@@ -40,7 +40,21 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={poppins.className}>{children}</body>
+			<body className={poppins.className}>
+				{/* <div className="snowflakes -z-1" aria-hidden="true">
+					<div className="snowflake">❅</div>
+					<div className="snowflake">❅</div>
+					<div className="snowflake">❆</div>
+					<div className="snowflake">❄</div>
+					<div className="snowflake">❅</div>
+					<div className="snowflake">❆</div>
+					<div className="snowflake">❄</div>
+					<div className="snowflake">❅</div>
+					<div className="snowflake">❆</div>
+					<div className="snowflake">❄</div>
+				</div> */}
+				{children}
+			</body>
 		</html>
 	);
 }

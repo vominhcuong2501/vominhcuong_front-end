@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { useTypewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 
 type Props = {
@@ -35,7 +35,7 @@ const Hero = ({ handleClick }: Props) => {
 				}}
 				className="space-y-5 text-white"
 			>
-				<div className="hidden md:block shadow-9 h-[550px] w-[550px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full"></div>
+				<div className="hidden md:block shadow-10 h-[550px] w-[550px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full"></div>
 				<Image
 					className="relative mx-auto h-40 w-40 rounded-full object-cover object-top"
 					src="/cam-bong-bong.jpg"
