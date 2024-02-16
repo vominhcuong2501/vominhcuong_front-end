@@ -1,25 +1,23 @@
 "use client";
 import About from "./_components/About";
 import Hero from "./_components/Hero";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import { Mousewheel } from "swiper/modules";
 import Experience from "./_components/Experience";
 import Project from "./_components/Project";
 import Skills from "./_components/Skills";
-import React, { useRef, useState } from "react";
-import "swiper/swiper-bundle.css";
 import Education from "./_components/Education";
-import Contact from "./_components/Contact";
+import ThankYou from "./_components/ThankYou";
+import React, { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Mousewheel } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/swiper-bundle.css";
 
 export default function Home() {
-	// Kích hoạt các module cần thiết của Swiper
 	const swiperRef = useRef(null);
-	// State để lưu trạng thái hiện tại của Swiper
+
 	const [swiper, setSwiper] = useState<any>();
 
-	// Hàm xử lý khi nhấn vào thẻ để điều hướng đến slide cụ thể
 	const goToSlide = (slideIndex: any) => {
 		swiper.slideTo(slideIndex);
 	};
@@ -72,7 +70,7 @@ export default function Home() {
 					<Education />
 				</SwiperSlide>
 				<SwiperSlide>
-					<Contact />
+					<ThankYou />
 				</SwiperSlide>
 			</Swiper>
 		</section>

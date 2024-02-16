@@ -6,8 +6,31 @@ const poppins = Poppins({
 	subsets: ["latin"],
 });
 export const metadata: Metadata = {
-	title: "Vo Minh Cuong - Front-end",
-	description: "CV Front-end",
+	title: "Vo Minh Cuong - Frontend",
+	description: "Vo Minh Cuong - Frontend",
+	viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+	authors: [{ name: "Vo Minh Cuong" }],
+	keywords: ["Front-end", "Vo Minh Cuong"],
+	openGraph: {
+		title: "Vo Minh Cuong - Frontend",
+		description: "Vo Minh Cuong - Frontend",
+		images: [
+			{
+				url: "./logo-vmc.png",
+				width: 1315,
+				height: 455,
+			},
+		],
+		locale: "vn",
+		type: "website",
+	},
+	robots: {
+		index: true,
+		follow: true,
+	},
+	alternates: {
+		canonical: "https://vominhcuong-frontend.vercel.app/",
+	},
 };
 
 export default function RootLayout({
