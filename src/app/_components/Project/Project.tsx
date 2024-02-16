@@ -253,7 +253,7 @@ the provided design and analysis documentation.
 					</h2>
 					<Swiper
 						modules={[Navigation, Pagination]}
-						className="mySwiper max-w-[343px] md:max-w-[700px] mx-auto !pb-[30px] md:!pb-0"
+						className="mySwiper max-w-[343px] md:max-w-[700px] mx-auto !pb-8 md:!pb-4"
 						slidesPerView={1}
 						pagination={{
 							clickable: true,
